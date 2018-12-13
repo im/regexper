@@ -10,13 +10,13 @@ import Regexper from './regexper.js';
 import Parser from './parser/javascript.js';
 import _ from 'lodash';
 
-(function() {
+(function () {
   // Initialize the main page of the site. Functionality is kept in the
   // [Regexper class](./regexper.html).
   if (document.body.querySelector('#content .application')) {
     let regexper = new Regexper(document.body);
 
-    regexper.detectBuggyHash();
+	regexper.detectBuggyHash();
     regexper.bindListeners();
 
     util.tick().then(() => {
